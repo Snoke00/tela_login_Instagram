@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+body{
+    background-color: #fafafa;
+}
+#mainContainer{
+    display: flex;
+    margin-top: 30px;
+}
+
+#bannerContainer,
+#FormContainer{
+    flex: 1 1 0;
+    width: 50%;
+}
+
+#bannerContainer{
+    text-align: right;
+}
+#bannerContainer img{
+    width: 100%;
+    margin-right: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+}
+#FormContainer{
+    text-align: center;
+}
+
+#formBox{
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 30px;
+}
+#formBox #logoInsta{
+    width: 175px;
+    height: 51px;
+    margin: 30px auto 12px;
+}
+
+#loginForm{
+     margin-top: 20px;
+}
+#loginForm input{
+     display: block;
+     font-size: 12px;
+     padding: 12px 9px;
+     background-color: #fafafa;
+     border: 1px solid #dbdbdb;
+     border-radius: 3px;
+     width: 268px;
+     margin: 5px auto;
+}
+
+#loginForm input[type="submit"]{
+     background-color: rgb(0, 149, 246);
+     opacity: .7;
+     color: #fff;
+     margin-top: 15px;
+     border-radius: 9px;
+     height: 30px;
+     font-size: 13px;
+     padding: 0;
+     font-weight: bold;
+     height: 33px;
+     border: transparent;
+}
+
+.separator{
+    position: relative;
+}
+.line{
+    border-top: 1px solid #dbdbdb;
+    width: 268px;
+    margin: 25px auto 35px;
+}
+
+.separator span{
+    position: absolute;
+    text-transform: uppercase;
+    color: #bbb;
+    background-color: #fff;
+    top: -6px;
+    width: 50px;
+    margin-left: -25px;
+}
+
+#facebookLogin{
+    margin-bottom: 25px;
+}
+#facebookLogin a {
+    display: flex;
+    text-decoration: none;
+    color: #385185;
+    justify-content: center;
+    align-items: center;
+}
+#facebookLogin img{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+#facebookLogin span{
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 1px;
+}
+
+.forgotPass{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.forgotPass a{
+    text-decoration: none;
+    color: #373799;
+}
+
+#registerContainer{
+    display: flex;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    height: 70px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+#registerContainer p{
+    font-size: 14px;
+    color: #262626;
+}
+#registerContainer a{
+    text-decoration: none;
+    color: rgb(0, 149, 246);
+    opacity: .7;
+    font-weight: bold;
+}
+
+#getAppContain{
+    text-align: center;
+    width: 350px;
+    margin-top: 15px;
+}
+#getAppContain p{
+    font-size: 14px;
+    color: #262626;
+}
+#getAppContain a{
+    text-decoration: none;
+}
+#getAppContain img{
+    margin-top: 15px;
+    width: 130px;
+    height: 40px;
+}
+#footerLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+#footerLinks li{
+    list-style: none;
+}
+#footerLinks a{
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+}
+#footerLinks a:hover{
+    text-decoration: underline;
+}
+#copyright{
+    text-align: center;
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+    margin: 20px auto 60px;
+}
+
+@media (max-width: 450px) {
+    body{
+        background-color: #fff;
+    }
+    #bannerContainer{
+        display: none;
+    }
+    #mainContainer,
+    #formBox{
+        margin-top: 0;
+    }
+    #FormContainer,
+    #formBox,
+    #registerContainer,
+    #getAppContain{
+        width: 100%;
+        border: none;
+    }
+    footer{
+        width: 90%;
+    }
+    #footerLinks{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
